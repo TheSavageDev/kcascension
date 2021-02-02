@@ -10,3 +10,7 @@ functions = "api/dist/functions"
   from = "/*"
   to = "/index.html"
   status = 200
+
+[context.production.environment]
+DATABASE_URL = 'postgres://yoqzpickbzmthz:a6f41a78053b26991c41529f99ad70a58100f775841cea63e86ce2745d640825@ec2-54-157-88-70.compute-1.amazonaws.com:5432/d5rse8qhjvt8sk?connection_limit=1'
+DB_PROVIDER = 'postgresql'
