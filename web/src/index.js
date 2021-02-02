@@ -8,10 +8,8 @@ import './scaffold.css'
 import './index.css'
 
 ReactDOM.render(
-  <FatalErrorBoundary page={FatalErrorPage}>
-    <RedwoodProvider>
-      <Routes />
-    </RedwoodProvider>
-  </FatalErrorBoundary>,
+  <RedwoodProvider>
+    <Routes />
+  </RedwoodProvider>,
   document.getElementById('redwood-app')
 )
