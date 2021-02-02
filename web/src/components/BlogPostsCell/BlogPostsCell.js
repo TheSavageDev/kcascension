@@ -18,5 +18,13 @@ export const Empty = () => <div>Empty</div>
 export const Failure = ({ error }) => <div>Error: {error.message}</div>
 
 export const Success = ({ posts }) => {
-  return posts.map((post) => <BlogPost key={post.id} post={post} />)
+  return (
+    <section className="-mt-10">
+      {posts.map((post) => (
+        <article className="mt-10" key={post.id}>
+          <BlogPost post={post} summary={true} />
+        </article>
+      ))}
+    </section>
+  )
 }

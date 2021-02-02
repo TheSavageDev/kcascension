@@ -1,28 +1,70 @@
 import { Link, routes } from '@redwoodjs/router'
+import { useAuth } from '@redwoodjs/auth'
 
 const BlogLayout = ({ children }) => {
+  const { logIn, logOut, isAuthenticated, currentUser } = useAuth()
   return (
     <>
-      <header>
-        <h1>
-          <Link to={routes.home()}>Church of the Ascension</Link>
-        </h1>
-        <h2>Catholic Parish</h2>
+      <header className="relative flex justify-between items-center py-4 px-8 bg-blue-700 text-white">
+        <article>
+          <h1 className="text-5xl font-semibold tracking-tight">
+            <Link
+              to={routes.home()}
+              className="text-blue-400 hover:text-blue-100 transition duration-100"
+            >
+              Church of the Ascension
+            </Link>
+          </h1>
+          <h2 className="text-4xl font-semibold tracking-tight text-center">
+            Catholic Parish
+          </h2>
+        </article>
         <nav>
-          <ul>
+          <ul className="relative flex items-center font-light">
             <li>
-              <Link to={routes.home()}>Home</Link>
+              <Link
+                to={routes.home()}
+                className="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded"
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link to={routes.about()}>About</Link>
+              <Link
+                to={routes.about()}
+                className="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded"
+              >
+                About
+              </Link>
             </li>
             <li>
-              <Link to={routes.contact()}>Contact</Link>
+              <Link
+                to={routes.contact()}
+                className="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded"
+              >
+                Contact
+              </Link>
             </li>
+            <li>
+              <a
+                className="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded"
+                href="#"
+                onClick={isAuthenticated ? logOut : logIn}
+              >
+                {isAuthenticated ? 'Log Out' : 'Log In'}
+              </a>
+            </li>
+            {isAuthenticated && (
+              <div className="absolute bottom-1 right-0 mr-12 text-xs text-blue-300">
+                {currentUser.email}
+              </div>
+            )}
           </ul>
         </nav>
       </header>
-      {children}
+      <main className="max-w-4xl mx-auto p-12 bg-white shadow rounded-b">
+        {children}
+      </main>
     </>
   )
 }
