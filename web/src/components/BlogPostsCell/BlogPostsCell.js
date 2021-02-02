@@ -1,4 +1,4 @@
-import BlogPost from '../BlogPost/BlogPost'
+import BlogPost from 'src/components/BlogPost'
 
 export const QUERY = gql`
   query BlogPostsQuery {
@@ -19,12 +19,12 @@ export const Failure = ({ error }) => <div>Error: {error.message}</div>
 
 export const Success = ({ posts }) => {
   return (
-    <section className="-mt-10">
+    <div className="-mt-10">
       {posts.map((post) => (
-        <article className="mt-10" key={post.id}>
+        <div key={post.id} className="mt-10">
           <BlogPost post={post} summary={true} />
-        </article>
+        </div>
       ))}
-    </section>
+    </div>
   )
 }

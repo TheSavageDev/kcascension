@@ -1,10 +1,11 @@
-import BlogLayout from 'src/layouts/BlogLayout/BlogLayout'
+import BlogLayout from 'src/layouts/BlogLayout'
 
 const AboutPage = () => {
   return (
     <BlogLayout>
       <p className="font-light">
-        Find me in <code>./web/src/pages/AboutPage/AboutPage.js</code>
+        This site was created to demonstrate my mastery of Redwood: Look on my
+        works, ye mighty, and despair!
       </p>
     </BlogLayout>
   )

@@ -5,7 +5,12 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'dark-blue': '#04294b',
+        grey: '#777',
+      },
+    },
   },
   variants: {
     extend: {
