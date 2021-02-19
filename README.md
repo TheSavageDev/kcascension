@@ -21,4 +21,44 @@ yarn install
 yarn redwood dev
 ```
 
-Your browser should open automatically to `http://localhost:8910` to see the web app. Lambda functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.redwood/functions/*`. 
+Your browser should open automatically to `http://localhost:8910` to see the web app. Lambda functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.redwood/functions/*`.
+
+# Site Map
+
+About
+-> Parish Information
+--> Parish Calendar
+--> Mass Times
+--> Meet Our Staff
+--> Sacraments
+--> Adoration
+-> Ascension Catholic School
+-> Facilities Request
+-> Request Forms
+Ministries
+-> Adult Faith
+--> RCIA
+--> Christ Renew His Parish
+--> Classes & Small Groups
+-> Family Life
+-> Young Adult
+-> Youth Ministry
+-> Youth Faith Formation
+-> Support Ministries
+-> Vocations
+-> Ministry Directory
+Get Involved
+-> Pray
+-> Join
+-> Stewardship & Planned Giving
+-> Liturgy
+--> Volunteer Info & Schedules
+-> Service Opportunities
+Media
+-> Bulletin
+-> Videos
+-> Blog
+-> Live Stream
+-> Social
+-> Online Resources & Links
+COVID-19

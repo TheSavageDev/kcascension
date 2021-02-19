@@ -5,7 +5,8 @@ module.exports = {
   tabWidth: 2,
   semi: false,
   singleQuote: true,
-  arrowParens: 'always',
+  arrowParens: 'avoid',
+  printWidth: 200,
   overrides: [
     {
       files: 'Routes.js',
