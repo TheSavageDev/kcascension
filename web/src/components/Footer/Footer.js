@@ -1,19 +1,25 @@
 const Footer = () => {
   return (
-    <footer className="w-full p-2 bg-dark-blue text-white flex flex-col">
+    <footer className="w-full p-2 bg-primary-900 text-white flex flex-col">
       <section className="flex flex-wrap justify-between">
         <section className="mb-1">
           <article>
             <header>
               <h3 className="text-lg">Parish Office</h3>
-              <hr className="border-b-2 border-green" />
+              <hr className="border-b-2 border-green-600" />
             </header>
             <p className="pl-4">
-              9510 W 127th St
+              <a
+                href="https://www.google.com/maps/place/9510+W+127th+St,+Overland+Park,+KS+66213/data=!4m2!3m1!1s0x87c0ea9b69b3b4d3:0xff916c67cfdbf7d6?sa=X&ved=2ahUKEwjV5KT-kIPvAhXPc98KHf0QAxoQ8gEwAHoECA0QAQ"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                9510 W 127th St
+                <br />
+                Overland Park, KS 66213
+              </a>
               <br />
-              Overland Park, KS 66213
-              <br />
-              p 913.681.3348
+              <a href="tel:9136813348">p 913.681.3348</a>
               <br />
               f 913.681.3517
               <br />
@@ -27,14 +33,14 @@ const Footer = () => {
           <article>
             <header>
               <h3 className="text-lg">Youth Faith Formation</h3>
-              <hr className="border-b-2 border-green" />
+              <hr className="border-b-2 border-green-600" />
             </header>
             <p className="pl-4">
-              p 913.681.7683
+              <a href="tel:9136817683">p 913.681.7683</a>
               <br />
-              woleary@kcascension.org
+              <a href="mailto:woleary@kcascension.org">woleary@kcascension.org</a>
               <br />
-              tbaldwin@acseagles.org
+              <a href="mailto:tbaldwin@acseagles.org">tbaldwin@acseagles.org</a>
               <br />
               Office Hours: M-Th 9a-4p
               <br />
@@ -44,7 +50,7 @@ const Footer = () => {
           <article>
             <header>
               <h3 className="text-lg">Login</h3>
-              <hr className="border-b-2 border-green" />
+              <hr className="border-b-2 border-green-600" />
             </header>
             <p className="pl-4">
               <a href="#" className="hover:underline block">
@@ -69,7 +75,7 @@ const Footer = () => {
           <article>
             <header>
               <h3 className="text-lg">School</h3>
-              <hr className="border-b-2 border-green" />
+              <hr className="border-b-2 border-green-600" />
             </header>
             <p className="pl-4">
               <a href="#" className="hover:underline block">
@@ -86,7 +92,7 @@ const Footer = () => {
           <article>
             <header>
               <h3 className="text-lg">Events</h3>
-              <hr className="border-b-2 border-green" />
+              <hr className="border-b-2 border-green-600" />
             </header>
             <p className="pl-4">
               <a href="#" className="hover:underline block">
@@ -102,7 +108,7 @@ const Footer = () => {
           <article>
             <header>
               <h3 className="text-lg">Recent Articles</h3>
-              <hr className="border-b-2 border-green" />
+              <hr className="border-b-2 border-green-600" />
             </header>
             <p className="pl-4">
               <a href="#" className="hover:underline block">
@@ -127,10 +133,7 @@ const Footer = () => {
           </article>
         </section>
       </section>
-      <small className="">
-        Created with The Holy Spirit | &copy; 2021 Church of the Ascension by
-        Jason A Savage
-      </small>
+      <small className="text-center text-xs">Created with The Holy Spirit | &copy; 2021 Church of the Ascension by Jason A Savage</small>
     </footer>
   )
 }

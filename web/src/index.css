@@ -17,50 +17,12 @@ html {
   height: 100%;
 }
 
-body {
-  height: 100vh;
-  background-color: #eaeaea;
-}
-
 #redwood-app {
   height: 100%;
 }
 
- .dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {
   display: block;
-}
-
-#hero {
-  background-image: url('images/hero.jpg');
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;
-  opacity: .2;
-
-}
-#mass-times {
-  @apply bg-mass relative bg-center bg-no-repeat bg-cover;
-}
-
-#mass-times::after,
-#daily-mass-times::after {
-  content: '';
-  @apply rounded-xl absolute top-0 left-0 right-0 bottom-0 bg-black opacity-10;
-}
-
-#daily-mass-times {
-  @apply bg-daily relative bg-center bg-no-repeat bg-cover;
 }
 
 @media (max-width: 767px) {
